@@ -1,16 +1,21 @@
 import Profile from './components/Profile';
-import user from './social-profile/user.json';
+import Statistics from './components/Statistics';
 
-export default function App() {
+import user from './social-profile/user.json';
+import statisticalData from './statistics/statistical-data.json';
+
+function App() {
     return <div>
         <Profile
             name={user.name}
             tag={user.tag}
             location={user.location}
             avatar={user.avatar}
-            followers={user.stats.followers}
-            views={user.stats.views}
-            likes={user.stats.likes}
+            stats={user.stats}
         />
+        <Statistics title="Upload stats" stats={statisticalData} />;
+        <Statistics stats={statisticalData} />;
     </div>
 }
+
+export default App
