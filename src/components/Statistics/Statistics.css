@@ -1,0 +1,28 @@
+.statistics {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 400px;
+  background-color: white;
+}
+.title {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: rgb(209, 209, 209);
+}
+.stat-list {
+  display: flex;
+}
+.item {
+  width: 100px;
+  border: 1px solid rgb(209, 209, 209);
+  background-color: violet;
+  color: #fff;
+}
+.percentage {
+  display: block;
+  margin-bottom: 15px;
+}

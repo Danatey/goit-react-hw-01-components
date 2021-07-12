@@ -1,15 +1,17 @@
-import Profile from './components/Profile';
-import Statistics from './components/Statistics';
-import FriendList from './components/FriendList';
-import TransactionHistory from './components/TransactionHistory';
+import Profile from './components/Profile/Profile';
+import Statistics from './components/Statistics/Statistics';
+import FriendList from './components/FriendList/FriendList';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 
 import user from './social-profile/user.json';
 import statisticalData from './statistics/statistical-data.json';
 import friends from './friend-list/friends.json';
 import transactions from './transaction-history/transactions.json';
 
+import "./App.css"
+
 function App() {
-    return <div>
+    return <div className="container">
         <Profile
             name={user.name}
             tag={user.tag}
